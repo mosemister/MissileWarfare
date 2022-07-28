@@ -19,7 +19,7 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: maven
       run: mvn package
-build_java_16:
+  build_java_16:
     name: Compile (Java 16)
     runs-on: ubuntu-latest
     needs: [build_java_17]
