@@ -34,7 +34,6 @@ build_java_16:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: maven
       run: mvn package
-
   build_java_11:
     name: Compile (Java 11)
     runs-on: ubuntu-latest
