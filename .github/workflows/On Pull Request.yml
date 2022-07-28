@@ -47,7 +47,7 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: maven
-      run: mvn package --file pom_j8.xml
+      run: mvn package --file pom-j8.xml
 
   sonarCloud:
     name: SonarCloud
